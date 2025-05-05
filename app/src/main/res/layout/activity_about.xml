@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".AboutActivity">
+
+    <ImageView
+        android:id="@+id/goBack"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/card_back_btn"
+        android:foregroundGravity="center"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_icon" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:text="About"
+        android:textColor="@color/black"
+        android:textSize="45sp"
+        android:layout_marginRight="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/goBack"
+        app:layout_constraintTop_toTopOf="@+id/goBack" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:background="@drawable/white_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/about_dev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/about_bg"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="12dp"
+                    android:elevation="5dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lobstertwo_regular"
+                        android:text="About Developer"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="#d9d9d9" />
+
+                <LinearLayout
+                    android:id="@+id/maillay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/gmail"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/lobstertwo_regular"
+                        android:text="rudramaurya313@gmail.com"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/githubl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/github"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/lobstertwo_regular"
+                        android:text="rudram837"
+                        android:textColor="@color/black"
+                        android:textSize="35sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/instal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/instagram"
+                        android:drawablePadding="15dp"
+                        android:fontFamily="@font/lobstertwo_regular"
+                        android:text="Rudra Maurya"
+                        android:textColor="@color/black"
+                        android:textSize="35sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/about_bg"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/about_dev"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lobstertwo_regular"
+                        android:text="About Application"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="#d9d9d9" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lobstertwo_regular"
+                        android:text="Upcoming Recipes\nItalian Recipes"
+                        android:textColor="@color/black"
+                        android:textSize="28sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="#d9d9d9" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lobstertwo_regular"
+                        android:text="Policies"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="35sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lobstertwo_regular"
+                        android:text="You have the right to access your personal data."
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/lobstertwo_regular"
+                        android:text="You have the right to request deletion of your account"
+                        android:textColor="@color/black"
+                        android:textSize="25sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

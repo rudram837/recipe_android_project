@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".SignUpActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cute_boy" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:text="Cook your favourite food"
+        android:textColor="@color/green_rad"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/lobstertwo_bold_italic"
+        android:textSize="25sp"
+        android:text="Sign Up here"
+        android:textColor="@color/green_rad"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <EditText
+        android:id="@+id/namebtn"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/user__1_"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:textSize="25sp"
+        android:textColor="@color/black_light"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <EditText
+        android:id="@+id/mailbutn"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/mail"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:textSize="25sp"
+        android:textColor="@color/black_light"
+        android:hint="Mail"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/namebtn"
+        app:layout_constraintStart_toStartOf="@+id/namebtn"
+        app:layout_constraintTop_toBottomOf="@+id/namebtn" />
+
+    <EditText
+        android:id="@+id/pwdbutn"
+        android:layout_width="325dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/edittext"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="15dp"
+        android:elevation="5dp"
+        android:ems="10"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:textSize="25sp"
+        android:textColor="@color/black_light"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/mailbutn"
+        app:layout_constraintStart_toStartOf="@+id/mailbutn"
+        app:layout_constraintTop_toBottomOf="@+id/mailbutn" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lobstertwo_bold_italic"
+        android:textSize="19sp"
+        android:text="Or"
+        android:textColor="@color/green_rad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pwdbutn" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/lobstertwo_italic"
+        android:text="Continue with"
+        android:textColor="@color/green_rad"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/googlebutn"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/whitepattern"
+        android:drawableLeft="@drawable/google"
+        android:paddingLeft="15sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lobstertwo_old"
+        android:textSize="22sp"
+        android:text="Google"
+        app:layout_constraintEnd_toStartOf="@+id/fbbutn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fbbutn"
+        android:layout_width="152dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/whitepattern"
+        android:drawableLeft="@drawable/facebook_color"
+        android:paddingLeft="15sp"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:fontFamily="@font/lobstertwo_old"
+        android:textSize="22sp"
+        android:text="Facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/googlebutn"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/createbutn"
+        android:background="@drawable/greenbutton"
+        android:layout_width="157dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/lobstertwo_old"
+        android:textSize="16sp"
+        android:text="Create Account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/googlebutn" />
+
+    <TextView
+        android:id="@+id/alreadyhavebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/lobstertwo_italic"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:text="Already have an Account?\nLog In here"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/createbutn"
+        app:layout_constraintStart_toStartOf="@+id/createbutn"
+        app:layout_constraintTop_toBottomOf="@+id/createbutn" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

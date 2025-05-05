@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_remove_24"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center|top"/>
+
+    <TextView
+        android:id="@+id/accbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account"
+        android:textSize="32sp"
+        android:textColor="#24543b"
+        android:drawableLeft="@drawable/acc"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:foreground="?attr/selectableItemBackground" />
+
+    <TextView
+        android:id="@+id/aboutbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About "
+        android:textSize="32sp"
+        android:textColor="#24543b"
+        android:drawableLeft="@drawable/person"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/lobstertwo_regular"
+        android:padding="15dp"
+        android:layout_gravity="center"
+        android:foreground="?attr/selectableItemBackground" />
+
+</LinearLayout>

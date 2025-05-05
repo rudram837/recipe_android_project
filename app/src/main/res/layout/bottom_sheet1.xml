@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bottom_sheet_bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_remove_24"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center|top"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textSize="32sp"
+                android:textColor="#24543b"
+                android:drawableLeft="@drawable/acc"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/lobstertwo_regular"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:foreground="?attr/selectableItemBackground" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/aboutbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="About Devveloper"
+                android:textSize="32sp"
+                android:textColor="#24543b"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="15dp"
+                android:fontFamily="@font/lobstertwo_regular"
+                android:padding="15dp"
+                android:layout_gravity="center"
+                android:foreground="?attr/selectableItemBackground" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EasinTasty</string>
+    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID</string>
+    <string name="facebook_app_id">1247629276242763</string>
+    <string name="fb_login_protocol_schema"></string>
+    <!-- TODO: Remove or change this placeholder text -->
+</resources>
